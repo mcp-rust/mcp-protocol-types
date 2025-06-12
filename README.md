@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/mcp-protocol-types.svg)](https://crates.io/crates/mcp-protocol-types)
 [![Documentation](https://docs.rs/mcp-protocol-types/badge.svg)](https://docs.rs/mcp-protocol-types)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **Shared types and protocol definitions for the Model Context Protocol (MCP)**
 
