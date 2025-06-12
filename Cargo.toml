@@ -1,0 +1,38 @@
+[package]
+name = "mcp-protocol-types"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["MCP Rust Contributors"]
+description = "Shared types and protocol definitions for the Model Context Protocol (MCP)"
+license = "MIT"
+repository = "https://github.com/mcp-rust/mcp-protocol-types"
+keywords = ["mcp", "ai", "llm", "protocol", "types"]
+categories = ["api-bindings", "data-structures", "development-tools"]
+readme = "README.md"
+homepage = "https://modelcontextprotocol.io"
+documentation = "https://docs.rs/mcp-protocol-types"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+url = { version = "2.5", features = ["serde"] }
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"], optional = true }
+
+# Optional validation support
+jsonschema = { version = "0.17", optional = true }
+
+[dev-dependencies]
+tokio-test = "0.4"
+pretty_assertions = "1.4"
+
+[features]
+default = []
+validation = ["jsonschema"]
+timestamps = ["chrono"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
